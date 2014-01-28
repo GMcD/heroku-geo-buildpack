@@ -121,7 +121,7 @@ set-default-env LIBRARY_PATH "$APP_GEOS/lib:$APP_GDAL/lib:$APP_PROJ/lib"
 set-default-env LD_LIBRARY_PATH "$APP_GEOS/lib:$APP_GDAL/lib:$APP_PROJ/lib"
 set-default-env CPATH "$APP_GEOS/include:$APP_GDAL/include:$APP_PROJ/include"
 
-echo "-----> Vendoring geo libraries done"
+echo "-----> Vendoring Geo Libraries Done"
 echo "-----> Publishing GDAL Config..."
 mkdir -p $BUILD_DIR/.profile.d
 echo "       Made Profile.D..."
