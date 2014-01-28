@@ -125,7 +125,7 @@ echo "-----> Vendoring Geo Libraries Done"
 echo "-----> Publishing GDAL Config..."
 mkdir -p $BUILD_DIR/.profile.d
 echo "       Made Profile.D..."
-echo 'PATH=$PATH:${APP_GDAL}/bin' > $BUILD_DIR/.profile.d/gdal.sh
+echo 'PATH=$PATH:'$APP_GDAL'/bin' > $BUILD_DIR/.profile.d/gdal.sh
 cat $BUILD_DIR/.profile.d/gdal.sh
 echo "-----> Published GDAL Config..."
 
