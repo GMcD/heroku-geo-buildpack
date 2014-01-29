@@ -120,12 +120,6 @@ BUNDLE_DISABLE_SHARED_GEMS: '1'
 set-default-env LIBRARY_PATH "$APP_GEOS/lib:$APP_GDAL/lib:$APP_PROJ/lib"
 set-default-env LD_LIBRARY_PATH "$APP_GEOS/lib:$APP_GDAL/lib:$APP_PROJ/lib"
 set-default-env CPATH "$APP_GEOS/include:$APP_GDAL/include:$APP_PROJ/include"
+set-default-env PATH "$PATH:$APP_GDAL/bin"
 
-echo "-----> Vendoring Geo Libraries Done"
-echo "-----> Publishing GDAL Config..."
-mkdir -p $BUILD_DIR/.profile.d
-echo "       Made Profile.D..."
-echo 'PATH=$PATH:'$APP_GDAL'/bin' > $BUILD_DIR/.profile.d/gdal.sh
-cat $BUILD_DIR/.profile.d/gdal.sh
-echo "-----> Published GDAL Config..."
-
+echo "-----> Vendoring Geo libraries done"
