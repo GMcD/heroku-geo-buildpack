@@ -3,5 +3,5 @@
 cat << EOF
 ---
 config_vars:
-  PATH: bin:node_modules/.bin:/app/bin:/usr/local/bin:/usr/bin:/bin
+  PATH: bin:node_modules/.bin:/app/bin:/usr/local/bin:/usr/bin:/bin:/app/vendor/gdal/1.11.0/bin
 EOF
